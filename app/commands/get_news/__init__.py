@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.join(CURRENT_DIR, "..", ".."))
 import constants
 import urllib2, json
 
-NEWS_API_URL = "https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=3ca58b6ade8f4fc69988ed4d497a5d79"
+NEWS_API_URL = "https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey= Stop leaving API keys on github"
 
 NUM_ARTICLES = 5
 
