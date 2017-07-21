@@ -7,7 +7,11 @@ import urllib2, json
 import pyowm
 
 URL = "http://freegeoip.net/json/"
-API_KEY = "ask Kyle for this"
+
+key_file = open("api_key.txt", 'r')
+API_KEY = key_file.read()
+key_file.close()
+
 
 FEEDBACK_FORMAT = "The temperature today is %d degrees fahrenheit, with %s"
 

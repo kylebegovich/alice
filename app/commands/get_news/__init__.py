@@ -4,7 +4,13 @@ sys.path.insert(0, os.path.join(CURRENT_DIR, "..", ".."))
 import constants
 import urllib2, json
 
-NEWS_API_URL = "https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey= Stop leaving API keys on github"
+NEWS_API_URL = "https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey="
+
+key_file = open("api_key.txt", 'r')
+NEWS_API_KEY = key_file.read()
+key_file.close()
+
+NEWS_API_URL += NEWS_API_KEY
 
 NUM_ARTICLES = 5
 
